@@ -1,0 +1,92 @@
+.t1
+{
+    text-align: center;
+    font-size: 50px;
+    font-family: sans-serif;
+    padding: 15px;
+}
+.title
+{
+    text-align: center;
+    font-size: 20px;
+    color:darkgrey;
+    padding: 10px;
+}
+
+  .mau1
+  {
+    border-bottom: 5px solid white;  
+    padding: 10px;
+     padding-bottom: 5px;
+      height: 200px;
+       min-height: 200px;
+  }
+  .mau1:hover{
+    border-bottom: 5px solid white;  
+    border-radius: 8px;
+  }
+.mau2
+  {
+    border-bottom: 5px solid white;  
+    color: blue;
+    font-size: 150%;
+  }
+  .mau2:hover{
+    border-bottom: 5px solid white;  
+    border-radius: 8px;
+    color: rgb(250, 95, 39);
+
+  }
+  .maun
+  {
+    border-bottom: 2px solid white;  
+    color: rgb(240, 240, 245);
+    font-size: 150%;
+    padding: 10px;
+     font-size: 15px;
+  }
+  .maun:hover{
+    border-bottom: 2px solid white;  
+    border-radius: 8px;
+    font-size: 150%;
+  }
+  .title1
+  {
+    border: 1px solid rgb(201, 207, 201);
+    border-radius: 2px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    height: 420px;
+    transition: opacity 1s;  
+   
+  }
+  .title1:hover
+  {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .mau3
+  {
+    padding: 10px;
+    border-bottom: 5px solid white;  
+    color: blue;
+    font-size: 150%;
+    text-align: center;
+  }
+  .mau3:hover{
+    border-bottom: 5px solid white;  
+    border-radius: 8px;
+    color: rgb(250, 95, 39);
+  }
+
+  .t2
+  {
+    padding: 15px;
+     border: 2px solid rgb(103, 245, 110); 
+     margin-bottom: 10px;
+  }
+  .t2:hover{
+    border-bottom: 4px solid rgb(22, 176, 223);  
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }

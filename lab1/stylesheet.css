@@ -1,0 +1,16 @@
+*
+{
+    
+    box-sizing: border-box; 
+}
+.c4
+{
+    opacity: 0.5;
+    border: 1px solid #ccc;
+    height: 100px;
+}
+#title-page:hover
+{
+    cursor: pointer;
+    color: blue !important;
+}

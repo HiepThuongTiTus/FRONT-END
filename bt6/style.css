@@ -1,0 +1,90 @@
+body{
+    color: rgb(17, 15, 15);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.contact
+{
+    margin: 30px auto;
+    width: 1140px;
+    padding: 15px;
+}
+h2{
+    color: black;
+    font-size: 29px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    border-bottom: 3px solid coral;
+}
+ul{
+    list-style: none;
+}
+h3{
+    padding: 30px;
+    font-size: 15px;
+}
+li{
+    color: darkgrey;
+    padding: 20px;
+}
+
+form{
+    display: block;
+}
+input[type="text"]
+{
+    height:40px;
+}
+input[type="text"],textarea
+{
+    border: 1px solid gray;
+    box-shadow: 2 gray inset;
+    box-sizing: border-box;
+    font-size: 15px;
+    padding-left: 20px;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+input[type="email"]
+{
+    height: 40px;
+}
+input[type="email"],textarea
+{
+    border: 1px solid gray;
+    box-shadow: 2 gray inset;
+    box-sizing: border-box;
+    font-size: 15px;
+    padding-left: 20px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.contact textarea
+{
+    height: 114px;
+} 
+textarea
+{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+}
+.contact .submit-btn
+{
+    margin-top: -10px;
+}
+.contact p{
+    margin-bottom: 15px;
+}
+button
+{
+    background-color: lightseagreen;
+    border: 1px solid turquoise;
+    color: white;
+    cursor: pointer;
+    min-width: 140px;
+    padding: 12px 10px;
+    text-align: center;
+    transition: 0.3s background-color;
+}

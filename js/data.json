@@ -1,0 +1,30 @@
+[
+   {
+      "id":"1",
+      "name":"Hà Nội",
+      "childrens":[
+         {
+            "id":"100",
+            "name":"Hoàn Kiếm"
+         },
+         {
+            "id":"101",
+            "name":"Đống Đa"
+         }
+      ]
+   },
+   {
+      "id":"2",
+      "name":"Đà Nẵng",
+      "childrens":[
+         {
+            "id":"200",
+            "name":"Hải Châu"
+         },
+         {
+            "id":"201",
+            "name":"Liên Chiểu"
+         }
+      ]
+   }
+]

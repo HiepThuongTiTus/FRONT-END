@@ -1,0 +1,52 @@
+bo chon
+CSS Selector
+tagName
+{
+	/**css here */
+}
+
+#ID_OF_TAG{} cung id lay id sau cung 
+.CLASS_OF_TAG{}
+tagName.hover{
+}
+
+1.color: ten mau, ma mau: hex #dddddd, rgb(0,0,0):den, 
+rgba(0,0,0,0.5): bo sung do mo
+
+//cach su dung before va after
+:after
+:before 
+ 	--- //xuat hien sau after
+position: sticky : cuon chuot di 
+
+
+#parent
+{
+position: relative
+}
+#parent:after
+{
+content:'a';
+position:absolute;
+
+khi khai bao input number tren IE thi no hien ra chu
+
+canvas
+
+div:nth-child(n)
+{
+color: red;
+}
+
+div:nth-child(2n+1){
+color: yellow; //phan tu le se co mau yellow
+}
+
+div:nth-child(2)
+{
+color: blue; //thu 2 se la chu blue
+}
+
+
+
+

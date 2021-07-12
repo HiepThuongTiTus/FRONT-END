@@ -1,0 +1,106 @@
+<html>
+    <head></head>
+    <body>
+        <h1>hello</h1>
+        <script>
+            //khai bao ham cho len dau chay tuan tu tu 1->n
+            function showBook(x)
+                {
+                    console.log('id: '+x.id);
+                    console.log('name: '+x.name);
+                    console.log('price: '+x.price);
+                    console.log('year: '+x.year);
+                }
+                //es6
+                const show = (x) =>
+                {
+                    console.log('id: '+x.id);
+                    console.log('name: '+x.name);
+                    console.log('price: '+x.price);
+                    console.log('year: '+x.year);
+                }
+            let books = [];
+            books.push({id:1, name:'s1', price: 10, year: 2019});
+            books.push({id:2, name:'s2', price: 20, year: 2019});
+            books.push({id:3, name:'v3', price: 30, year: 2020});
+            books.push({id:4, name:'v4', price: 40, year: 2019});
+            books.push({id:5, name:'v5', price: 15, year: 2018});
+            books.push({id:6, name:'s6', price: 17, year: 2014});
+           //cau1
+                //c1
+                    console.log(books.filter(x => x.year==2019)); 
+                //c2
+                    let index = books.findIndex(x=> x.year==2019);
+                    if(index >-1)
+                    {
+                        console.log(books[index])
+                    }
+                    else{
+                        console.log("Khong tim thay")
+                    }
+                //c3
+                let index1 = books.filter(x=> x.year==2019);
+                    if(index1.length >0)
+                    {
+                       
+                    }
+                    else{
+                        console.log("Khong tim thay")
+                    }
+                
+            //cau2
+            console.log(books.filter(x => x.price>=10 && x.price<=20)); 
+            //cau3
+            console.log(books.findIndex(x => x.id==3)); 
+            //cau4
+            console.log(books.filter(x => x.Started=='v')); 
+
+            //c1
+            function kiemTraSC(x)
+            {
+                if(x%2 === 0)
+                {
+                    return true;
+                }
+                else 
+                {return false;}
+            }
+            //c2
+            function soChan(z)
+            {
+                return z%2==0;
+            }
+            
+//c1
+            function kiemTraSL(a,b)
+            {
+                if(a<b) {
+                    return b;
+                }
+                else {return a;}
+            }
+//c2
+            function soLonNhat(c,d)
+            {
+                return c>d ? c:d;
+            }
+//c1
+            let soChan = kiemTraSC(2);
+            console.log(soChan);
+
+            let soLon = kiemTraSL(4,5);
+            console.log(soLon);
+        //c2
+        const soChan2 = (z) => z%2 ===0;
+        const soLon2 = (c,d) => c>d ? c:d;
+
+        let resultx = soChan(12);
+        let resulty = soChan2(20);
+
+        let resultm = SoLon(5,4);
+        let resultn = soLon2(7,4);
+        
+
+        </script>
+    </body>
+</html>

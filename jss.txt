@@ -1,0 +1,7 @@
+ kieu dl:
+string
+number
+boolean
+array
+object
+date

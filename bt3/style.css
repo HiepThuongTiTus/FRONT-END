@@ -1,0 +1,31 @@
+
+ul{
+    list-style: none;
+}
+
+.title
+{
+    background: url(https://placeimg.com/1920/250/any) no-repeat left top;
+    margin: 30px auto;
+    padding: 38px 0;
+    width: 1180px;
+}
+
+.title ul{
+    text-align: center;
+}
+
+.title ul li{
+    color: aliceblue;
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+}
+.title ul li p{
+    width: 100%;
+}
+.title ul li .number
+{
+    font-size: 43px;
+    margin-bottom: 7px;
+}

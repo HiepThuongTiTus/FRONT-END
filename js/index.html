@@ -1,0 +1,139 @@
+<html>
+    <head></head>
+    <body>
+        <h1> hello </h1>
+        <script>
+            // alert('hello JS'); bang thong bao man hinh
+            //cau hoi alert true, false:  muon ng dung xac nhan
+                /* blog comment
+                    let confirmed = window.confirm("Ban chac chu!");
+                    if(confirmed == true)
+                    {
+                        alert('Nguoi dung dong y');
+                    }
+                    else
+                    {
+                        alert('nguoi dung huy');
+                    }*/
+
+            //nhan dl voi nguoi dung
+                    /*let name = window.prompt('Ho ten: ');
+                    alert('Chao ban: ' + name);*/
+            
+            //hien tren man hinh console
+                    // a=1;
+                    // console.log(a);
+                    // var b="ac";
+                    // console.log(b);
+                    // let c=true;
+                    // console.log(c);
+                    // const x= 'c';
+                    // console.log(x);
+
+            
+           //var kq chay 1 lan myFunc2, let chay 10000 lan
+           //dung let de xac dinh bien do 
+        //    var n=100;
+        //     myFunc();
+        //     function myFunc(){
+               
+        //         for(var i=1; i<n;i++)
+        //         {
+        //             myFunc2();
+        //         }
+        //     }
+        //     function myFunc2(){
+        //         for(var i=1; i<n;i++)
+        //         {
+        //            console.log(i);
+        //         }
+        //     }
+            //var khai bao la cho nao cung chay
+            //let khai bao chi chay o duoi no
+
+            // let sv1 = {id:100, name:'hiep'}; 
+
+            // console.log(sv1);
+            // console.log(sv1.id);truy suat thuoc tinh
+            // console.log(sv1.name);
+            //them vao
+            // sv1.age = 2000;
+            // console.log(sv1.age);
+
+            //array
+           /* let numbers = [];
+            numbers.push(1);
+            numbers.push(2);
+            numbers.push(3);
+            //xep theo thu tu 123 push
+            console.log(numbers)*/
+            //pop vao sau ra truoc
+            /*numbers.pop();
+            numbers.pop();
+            console.log(numbers)*/
+            /*
+            for(let i=0;i<numbers.length;i++)
+            {
+                console.log(numbers[i]);
+            }*/
+//es6
+            /*for(let number of numbers)
+            {
+                console.log(number);
+            }*/
+/*
+            let students = [];
+            students.push({id:1, name:'Trieu'});
+            students.push({id:2, name:'Tuan'});
+            students.push({id:3, name:'Quynh'});
+            students.push({id:4, name:'Ban'});
+            students.push({id:5, name:'Hiep'});
+            students.push({id:6, name:'Phet'});
+
+            //arrow function: bieu thuc co huong
+            //index of chi dung cho mang number, string, bool
+            let index = students.findIndex(x => x.id ==4); //x la 1 object array, neu number thi x la 1 so trong mang
+            console.log(index); //-1 not found, 0..n-1: found
+            
+            //tra ve mang 
+            let item = students.filter(x => x.id == 5);
+            console.log(item);
+
+            //validate
+            let str='ccc';
+            //check null 
+            //str = false: str ='', str =null, str = underfine
+            if(!str || str.trim().length ===0)
+            {
+                alert('str sai roi ban')
+                return false
+            }
+            //max length
+            if(!str.trim().length > 255)
+            {
+                alert('Ky tu dai qua ban oi')
+                return false
+            }
+            //number
+            if(IsNaN('abc')){
+                alert('Vui long nhap 1 so nhe');
+                return false;
+            }*/
+            //regrex
+                function validateEmail(email) {
+                const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                return re.test(String(email).toLowerCase());
+            }
+            let email = window.prompt('Moi nhap email: ');
+            let isTrue = validateEmail(email)
+            if(isTrue)
+            {
+                alert('Email hop le')
+            }
+            else{
+                alert('Email khong hop le')
+            }
+
+        </script>
+    </body>
+</html>

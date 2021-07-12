@@ -1,0 +1,51 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <p id="demo">hi</p>
+        <script>
+           var ktObj = [
+                {
+                    "id":"1",
+                    "name":"Hà Nội",
+                    "childrens":[
+                        {
+                            "id":"100",
+                            "name":"Hoàn Kiếm"
+                        },
+                        {
+                            "id":"101",
+                            "name":"Đống Đa"
+                        }
+                    ]
+                },
+                {
+                    "id":"2",
+                    "name":"Đà Nẵng",
+                    "childrens":[
+                        {
+                            "id":"200",
+                            "name":"Hải Châu"
+                        },
+                        {
+                            "id":"201",
+                            "name":"Liên Chiểu"
+                        }
+                    ]
+                }
+                ];
+
+//  1. Mô tả bằng object và array trong javascript.
+// 2. Sử dụng đối tượng JSON để chuyển object thành chuỗi json
+// 3. Viết hàm thêm vào 1 thành phố
+// 4. Viết hàm tìm kiếm quận theo id
+// 5. Viết hàm tìm kiếm các quận theo tên
+
+    const obj = JSON.parse(ktObj);
+    document.getElementById("demo").innerHTML =
+    obj.childrens[1].id + " " + obj.childrens[1].name;
+            
+
+        </script>
+    </body>
+</html>

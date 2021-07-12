@@ -1,0 +1,105 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root
+        {
+            --primary: rgb(54,101,177);
+            --second: rgb(26,114,26);
+        }
+        #items > p:nth-child(2n+1):not(#line3)
+        /* '>' cung cap thi dung mui ten */
+        {
+            color: red;
+        }
+        #wrapper
+        {
+            width: 1000px;
+            background: var(--primary);
+            height: 1000px;
+            margin: 0 auto; /*canh giua */
+        }
+        #left
+        {
+            width: 200px;
+            background: red;
+            height: 200px;
+            float: left;
+        }
+        #right
+        {
+            width: 200px;
+            background: yellow;
+            height: 200px;
+            float: left;
+            margin-left: 20px;
+        }
+        /* large */
+        @media (min-width: 1170)
+        {
+                  
+        }
+
+        /* laptop */
+        @media(max-width: 1169px) and (min-width: 961px)
+        {
+
+        }
+        /* ipad, tablet */
+        @media (max-width: 990px) and (min-width:768px)
+        {
+
+        }
+        /* mobile */
+        @media screen and (max-width: 767px)
+       {
+           #wrapper
+           {
+               width: 100%;
+           }
+           #left
+           {
+              float: unset;  /* bo di */
+              width: 100%;
+           }
+           #right
+           {
+               float: unset;
+               width: 100%;
+               margin: 0;
+           }
+       }
+
+    </style>
+</head>
+<body>
+    <!-- <div id="items">
+        <p> Line 1
+            <div>
+                <p>a</p>
+                <p>b</p>
+                <p>c</p>
+                <p>d</p>
+            </div>
+        </p>
+
+        <p> Line 2</p>
+        <p id="line3"> Line 3</p>
+        <p> Line 4</p>
+        <p> Line 5</p>
+        <p> Line 6</p>
+        <p> Line 7</p>
+    </div> -->
+    <div id="wrapper">
+        <div id="left">
+
+        </div>
+        <div id="right">
+
+        </div>
+    </div>
+</body>
+
+</html>

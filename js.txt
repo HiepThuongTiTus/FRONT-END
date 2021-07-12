@@ -1,0 +1,183 @@
+ON TAP Script
+
+//1
+<button type="button" onclick="document.getElementById('demo').innerHTML = Date()"> Bam di </button>
+
+//2
+document.getElementById("demo").style.display = "none"; //an
+document.getElementById("demo").style.display="block"; //xuat hien
+
+//3
+document.getElementById("demo").innerHTML = "Toi Hiep ne";
+
+//4
+ <script>
+	function myFunction(){
+	document.getElementById("demo").innerHTML ="Hiep day"
+	}
+</script>
+<p id="demo"> Hiep oi </p>
+<button type="button" onclick="myFunction()"> Ra ne</button>
+
+//5
+<p id="demo">hiep</p>
+<script>
+	document.getElementById("demo").innerHTML = 5+6
+</script>
+
+//6
+<script>
+	document.write(5+6);
+</script>
+
+//7
+<script>
+	window.alert(5+6);
+	alert(5+6);
+</script>
+
+//8
+<button onclick = "window.print()">print </button>
+
+//9
+<script>
+	var x,y,z;
+	x=5; y=6; z=x+y;
+//c1
+	document.getElementById("demo").innerHTML = "The value of z is "+z+".";
+//c2
+document.getElementById("demo1").innerHTML =c;
+</script>
+
+//10.
+<button type ="button" onclick="myFunction()"> Click me!</button>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+function myFunction()
+{
+document.getElementById("demo1").innerHTML ="Hello Hiep";
+document.getElementById("demo2").innerHTML ="How are you?";
+}
+</script>
+
+//11 ganbien
+<script>
+	var x;
+	x=6;
+	document.getElementById("demo").innerHTML = x;
+
+</script>
+
+//12
+<p id="demo"></p>
+<script>
+	document.getElementById("demo").innerHTML = (5+6)*10;
+</script>
+
+//13 
+<p id="demo"></p>
+<script>
+var x;
+x=5;
+document.getElementById("demo").innerHTML = x*10;
+
+//14
+<p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML="Hiep"+""+"H";
+</script>
+
+//15
+<p id="demo"></p>
+<script>
+var x=10;
+{
+ let x=2;
+}
+document.getElementById("demo").innerHTML=x;
+</script>
+
+//16
+<p id="demo"></p>
+<script>
+var i=5;
+for(var i=0; i<10;i++){//some statements}
+document.getElementById("demo").innerHTML=i
+</script>
+-->dap an: 10
+
+//17
+let i=5;
+for(var i=0; i<10;i++){//some statements}
+document.getElementById("demo").innerHTML=i
+</script>
+--> dap an: 5
+
+//18
+<script>
+var carName = "Volvo";
+
+// code here can use window.carName
+document.getElementById("demo").innerHTML = "I can display " + window.carName;
+</script>
+--> dap an: I can display Volvo
+
+//19
+<script>
+let carName = "Volvo";
+
+// code here can not use window.carName
+document.getElementById("demo").innerHTML = "I can not display " + window.carName;
+</script>
+--> dap an: I can display undefined
+
+//20
+var x = 2;       // Allowed
+let x = 3;       // Not allowed
+
+{
+  var x = 4;   // Allowed
+  let x = 5   // Not allowed
+}
+
+//21
+<script>
+try {
+  carName = "Saab";
+  let carName = "Volvo";
+}
+catch(err) {
+  document.getElementById("demo").innerHTML = err;
+}
+</script>
+-> dap an: ReferenceError: Cannot access 'carName' before initialization
+
+DOM
+1. Tim ptu theo id: Su dung id phan tu. 
+VD: var myElement = document.getElementById("intro"); //khong co thi tr? ve null
+2.Tim ptu HTML theo ten the
+VD: var x= document.getElementsByTagName("p")
+var y= document.getElementById("main");
+3.Tim ptu HTML theo ten lop: Su dung getElementsByClassName()
+VD: var x= document.getElementsByClassName("intro")
+4. Tim phan tu HTML bang bo chon CSS: Su dung querySelectorAll()
+VD: var x = document.querySelectorAll("p.intro");
+5. Tim ptu HTML bang bo suu tap doi tuong HTML
+var x= document.forms["frm1"];
+var  text ="";
+var i;
+for(i =0; i<x.length;i++){
+text += x.elements[i].value +"<br>";
+}
+document.getElementById('demo').innerHTML = text;
+
+
+
+
+	
+
+
+
